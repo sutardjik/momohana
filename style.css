@@ -1,0 +1,157 @@
+@font-face {
+    font-family: HDMC;
+    src: url(/fonts/HDMicrobic-Condensed.otf);
+}
+
+@font-face {
+    font-family: RGMF;
+    src: url(/fonts/PPRightGroteskMono-Fine.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--background);
+    cursor: var(--defaultcursor);
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --background: #F5EEE8;
+    --primarytext: #262421;
+    --secondarytext: #9A8579;
+    --accent: #D9B8A7;
+    --selection: #E7D1C6;
+    --buttonhover: #F8E1B0;
+    --defaultcursor: url(/img/default.png), default;
+    --pointercursor: url(/img/pointer.png), default;
+    --font-display: HDMC;
+    --font-mono: RGMF;
+    --fw: 100;
+    --line-height: 1.5;
+    --space-sm: 10px;
+    --space-md: 30px;
+    --space-lg: 50px;
+    --space-xl: 70px;
+}
+
+::selection {
+    color: var(--primarytext);
+    background: var(--selection);
+}
+
+h1 {
+    color: var(--primarytext);
+    font-family: var(--font-display);
+    font-weight: var(--fw);
+    font-size: 40px;
+    margin-bottom: var(--space-sm);
+}
+
+h2 {
+    color: var(--primarytext);
+    font-family: var(--font-display);
+    font-weight: var(--fw);
+    font-size: 30px;
+    margin-top: var(--space-lg);
+    line-height: var(--line-height);
+}
+
+h3 {
+    color: var(--primarytext);
+    font-family: var(--font-mono);
+    font-weight: var(--fw);
+    font-size: 20px;
+    margin-top: var(--space-lg);
+    line-height: var(--line-height);
+}
+
+.button {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    border: 1px dashed var(--primarytext);
+    border-radius: var(--space-sm);
+    background-color: var(--accent);
+    color: var(--primarytext);
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.button a,
+.button a:visited {
+    color: var(--primarytext);
+}
+
+.button:hover { background-color: var(--buttonhover); }
+
+.text-secondary { color: var(--secondarytext); }
+
+.pointer-cursor:hover { cursor: var(--pointercursor); }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3vh;
+}
+
+.scroll-fade-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    will-change: opacity, transform;
+}
+
+.scroll-fade-text.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collage-row {
+    display: flex;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-xl);
+    gap: var(--space-lg);
+    flex-direction: column;
+}
+
+.collage-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--space-sm);
+}
+
+.collage-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.collage-image:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    .collage-row {
+        flex-direction: row;
+    }
+
+    .collage-image {
+        flex: 1;
+    }
+}
