@@ -1,11 +1,11 @@
 @font-face {
     font-family: HDMC;
-    src: url(/fonts/HDMicrobic-Condensed.otf);
+    src: url(./fonts/HDMicrobic-Condensed.otf);
 }
 
 @font-face {
     font-family: RGMF;
-    src: url(/fonts/PPRightGroteskMono-Fine.otf);
+    src: url(./fonts/PPRightGroteskMono-Fine.otf);
 }
 
 * {
