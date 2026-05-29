@@ -23,10 +23,6 @@ body {
     cursor: var(--defaultcursor);
 }
 
-a {
-    text-decoration: none;
-}
-
 :root {
     --background: #F5EEE8;
     --primarytext: #262421;
@@ -75,6 +71,10 @@ h3 {
     font-size: 20px;
     margin-top: var(--space-lg);
     line-height: var(--line-height);
+}
+
+a {
+    text-decoration: none;
 }
 
 .button {

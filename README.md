@@ -2,7 +2,7 @@
 
 _How can a personal design philosophy translate into visual form?_
 
-momohana is a visual essay exploring a design philosophy rooted in intention, restraint, softness, and structure. Inspired by peach moonstone and the fleeting delicacy of peach blossoms, the site draws from qualities of muted warmth, luminosity, and quiet restraint. These sensibilities shape a visual language defined by diffused light, tonal gradients, negative space, and silhouettes that favor suggestion over detail. Through carefully restrained forms, momohana brings together fashion, beauty, and spacial form into a cohesive study of softness and structure.
+momohana is a visual essay exploring a design philosophy rooted in intention, restraint, softness, and structure. Inspired by peach moonstone and the fleeting delicacy of peach blossoms, the site draws from qualities of muted warmth, luminosity, and quiet restraint. These sensibilities shape a visual language defined by diffused light, tonal gradients, negative space, and silhouettes that favor suggestion over detail. Through carefully restrained forms, momohana brings together fashion, beauty, and spatial form into a cohesive study of softness and structure.
 
 ## Acknowledgments
 
