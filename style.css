@@ -35,11 +35,23 @@ body {
     --font-display: HDMC;
     --font-mono: RGMF;
     --fw: 100;
+    --opacity-hidden: 0;
+    --opacity-shown: 1;
+    --line-weight: 1px;
+    --padding-top: 3vh;
+    --button-hover: 0.3s ease;
+    --image-hover: 0.5s ease;
+    --scroll-fade: 1s ease-out;
+    --zoom-hover: scale(1.1);
+    --margin: 0 auto;
+    --button-margin: 0.5em 0.5em 0.5em 0;
     --line-height: 1.5;
-    --space-sm: 10px;
+    --space-xs: 10px;
+    --space-sm: 20px;
     --space-md: 30px;
-    --space-lg: 50px;
-    --space-xl: 70px;
+    --space-lg: 40px;
+    --space-xl: 50px;
+    --space-xxl: 70px;
 }
 
 ::selection {
@@ -48,29 +60,29 @@ body {
 }
 
 h1 {
+    margin-bottom: var(--space-xs);
     color: var(--primarytext);
     font-family: var(--font-display);
     font-weight: var(--fw);
-    font-size: 40px;
-    margin-bottom: var(--space-sm);
+    font-size: var(--space-lg);
 }
 
 h2 {
+    margin-top: var(--space-xl);
+    line-height: var(--line-height);
     color: var(--primarytext);
     font-family: var(--font-display);
     font-weight: var(--fw);
-    font-size: 30px;
-    margin-top: var(--space-lg);
-    line-height: var(--line-height);
+    font-size: var(--space-md);
 }
 
 h3 {
+    margin-top: var(--space-xl);
+    line-height: var(--line-height);
     color: var(--primarytext);
     font-family: var(--font-mono);
     font-weight: var(--fw);
-    font-size: 20px;
-    margin-top: var(--space-lg);
-    line-height: var(--line-height);
+    font-size: var(--space-sm);
 }
 
 a {
@@ -79,15 +91,15 @@ a {
 
 .button {
     font-family: var(--font-mono);
-    font-size: 20px;
-    border: 1px dashed var(--primarytext);
-    border-radius: var(--space-sm);
+    font-size: var(--space-sm);
+    border: var(--line-weight) dashed var(--primarytext);
+    border-radius: var(--space-xs);
     background-color: var(--accent);
     color: var(--primarytext);
-    padding: 10px 20px;
+    padding: var(--space-xs) var(--space-sm);
+    margin: var(--button-margin);
     display: inline-block;
-    margin: 0.5em 0.5em 0.5em 0;
-    transition: background 0.3s ease, border 0.3s ease;
+    transition: background var(--button-hover), border var(--button-hover);
 }
 
 .button a,
@@ -103,27 +115,27 @@ a {
 
 .container {
     width: 80%;
-    margin: 0 auto;
-    padding-top: 3vh;
+    margin: var(--margin);
+    padding-top: var(--padding-top);
 }
 
 .scroll-fade-text {
-    opacity: 0;
-    transform: translateY(var(--space-lg));
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: var(--opacity-hidden);
+    transform: translateY(var(--space-xl));
+    transition: opacity var(--scroll-fade), transform var(--scroll-fade);
     will-change: opacity, transform;
 }
 
 .scroll-fade-text.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: var(--opacity-shown);
+    transform: translateY(var(--opacity-hidden));
 }
 
 .collage-row {
     display: flex;
     margin-top: var(--space-md);
-    margin-bottom: var(--space-xl);
-    gap: var(--space-lg);
+    margin-bottom: var(--space-xxl);
+    gap: var(--space-xl);
     flex-direction: column;
 }
 
@@ -139,11 +151,11 @@ a {
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform var(--image-hover);
 }
 
 .collage-image:hover img {
-    transform: scale(1.1);
+    transform: var(--zoom-hover);
 }
 
 @media screen and (min-width: 768px) {
@@ -152,6 +164,6 @@ a {
     }
 
     .collage-image {
-        flex: 1;
+        flex: var(--opacity-shown);
     }
 }
