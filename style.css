@@ -37,13 +37,12 @@ body {
     --fw: 100;
     --opacity-hidden: 0;
     --opacity-shown: 1;
-    --line-weight: 1px;
-    --padding-top: 3vh;
     --button-hover: 0.3s ease;
     --image-hover: 0.5s ease;
     --scroll-fade: 1s ease-out;
     --zoom-hover: scale(1.1);
     --margin: 0 auto;
+    --line-weight: 1px;
     --button-margin: 0.5em 0.5em 0.5em 0;
     --line-height: 1.5;
     --space-xs: 10px;
@@ -52,6 +51,7 @@ body {
     --space-lg: 40px;
     --space-xl: 50px;
     --space-xxl: 70px;
+    --padding-top: 3vh;
 }
 
 ::selection {
