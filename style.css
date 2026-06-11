@@ -37,21 +37,21 @@ body {
     --fw: 100;
     --opacity-hidden: 0;
     --opacity-shown: 1;
+    --line-height: 1.5;
+    --margin: 0 auto;
+    --zoom-hover: scale(1.1);
     --button-hover: 0.3s ease;
     --image-hover: 0.5s ease;
     --scroll-fade: 1s ease-out;
-    --zoom-hover: scale(1.1);
-    --margin: 0 auto;
-    --line-weight: 1px;
     --button-margin: 0.5em 0.5em 0.5em 0;
-    --line-height: 1.5;
+    --padding-top: 3vh;
+    --line-weight: 1px;
     --space-xs: 10px;
     --space-sm: 20px;
     --space-md: 30px;
     --space-lg: 40px;
     --space-xl: 50px;
     --space-xxl: 70px;
-    --padding-top: 3vh;
 }
 
 ::selection {
@@ -108,7 +108,6 @@ a {
 }
 
 .button:hover { background-color: var(--buttonhover); }
-
 .pointer-cursor:hover { cursor: var(--pointercursor); }
 
 .text-secondary { color: var(--secondarytext); }
@@ -154,9 +153,7 @@ a {
     transition: transform var(--image-hover);
 }
 
-.collage-image:hover img {
-    transform: var(--zoom-hover);
-}
+.collage-image:hover img { transform: var(--zoom-hover); }
 
 @media screen and (min-width: 768px) {
     .collage-row {
