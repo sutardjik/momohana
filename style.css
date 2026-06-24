@@ -118,7 +118,7 @@ a {
 }
 
 .scroll-fade-text {
-    opacity: var(--opacity-hidden);
+    opacity: 0;
     transform: translateY(var(--space-xl));
     transition: opacity var(--scroll-fade), transform var(--scroll-fade);
     will-change: opacity, transform;
