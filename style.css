@@ -35,7 +35,6 @@ body {
     --font-display: HDMC;
     --font-mono: RGMF;
     --fw: 100;
-    --opacity-hidden: 0;
     --opacity-shown: 1;
     --line-height: 1.5;
     --margin: 0 auto;
@@ -127,7 +126,7 @@ a {
 
 .scroll-fade-text.is-visible {
     opacity: var(--opacity-shown);
-    transform: translateY(var(--opacity-hidden));
+    transform: translateY(0);
 }
 
 .collage-row {
@@ -154,6 +153,12 @@ a {
 }
 
 .collage-image:hover img { transform: var(--zoom-hover); }
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-fade-text {
+        transition: none;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .collage-row {
