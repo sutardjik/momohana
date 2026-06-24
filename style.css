@@ -35,7 +35,6 @@ body {
     --font-display: HDMC;
     --font-mono: RGMF;
     --fw: 100;
-    --opacity-shown: 1;
     --line-height: 1.5;
     --margin: 0 auto;
     --zoom-hover: scale(1.1);
@@ -118,16 +117,12 @@ a {
 }
 
 .scroll-fade-text {
-    opacity: 0;
     transform: translateY(var(--space-xl));
     transition: opacity var(--scroll-fade), transform var(--scroll-fade);
     will-change: opacity, transform;
 }
 
-.scroll-fade-text.is-visible {
-    opacity: var(--opacity-shown);
-    transform: translateY(0);
-}
+.scroll-fade-text.is-visible { transform: translateY(0); }
 
 .collage-row {
     display: flex;
@@ -166,6 +161,6 @@ a {
     }
 
     .collage-image {
-        flex: var(--opacity-shown);
+        flex: 1;
     }
 }
