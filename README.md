@@ -10,6 +10,6 @@ Through carefully restrained forms, momohana brings together fashion, beauty, an
 
 ## Acknowledgments
 
-Internet-sourced works are credited to [Halleroed](https://halleroed.com/), [Six N. Five](https://sixnfive.com/), and [EADEM](https://eadem.co/).
+Internet-sourced works are credited to [Halleroed](https://halleroed.com/), [Benoit Challand](https://benoitchalland.com/), and [EADEM](https://eadem.co/).
 
 All selections are independent and not affiliated with, endorsed by, or sponsored by the above.
